@@ -63,7 +63,7 @@
                                 <rect key="frame" x="35" y="474" width="344" height="66"/>
                                 <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="344" id="Ek4-zM-xDl"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="344" id="Ek4-zM-xDl"/>
                                     <constraint firstAttribute="height" constant="66" id="vzi-zq-2qs"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="35"/>
@@ -73,6 +73,9 @@
                                     <color key="titleColor" red="1" green="0.1857388616" blue="0.57339501380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="randomDiceButtom:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uvp-7y-xy9"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -96,6 +99,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="firstDiceImageView" destination="07V-Xn-0DJ" id="yUZ-A8-Lvy"/>
+                        <outlet property="secondDiceImageView" destination="RWk-6M-Sut" id="R2e-8X-ees"/>
+                        <outlet property="thirdDiceImageView" destination="WdQ-z5-fQw" id="ktw-a4-k2U"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
